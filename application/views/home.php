@@ -13,6 +13,148 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link href="<?php echo base_url()?>template/css/responsive.css" rel="stylesheet">
+
+
+
+
+
+
+        <style type="text/css">
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place front is invalid - may break your css so removed */  
+                padding-top: 100px; /* Location of the box - don't know what this does?  If it is to move your modal down by 100px, then just change top below to 100px and remove this*/
+                left: 0;
+                right:0; /* Full width (left and right 0) */
+                top: 0;
+                bottom: 0; /* Full height top and bottom 0 */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+                }
+
+
+                .w3-lobster {
+                font-family: "Lobster", serif;
+                text-decoration-color: 
+                }
+                .rainbow2 {
+
+                      background-image: linear-gradient(to right, brown, red, orange 50%);
+                      color: transparent;
+                      -webkit-background-clip: text;
+                      background-clip: text;
+                    
+                }
+                .rainbow {
+
+                 
+                      background-image: linear-gradient(to right, red, orange 50%, brown);
+                      color: transparent;
+                      -webkit-background-clip: text;
+                      background-clip: text;
+
+                }
+                #grad1 {
+  
+                background: white; /* For browsers that do not support gradients */
+                background: linear-gradient(to top ,#FEFEFE,#E1DDDD ) /* Standard syntax (must be last) */
+                }
+
+
+                .vl {
+                border-left: 2px solid #E1DDDD;
+                height: 330px;
+                position: absolute;
+                left: 50%;
+                margin-left: -3px;
+                top: 0;
+            }
+
+
+                        .switch {
+              position: relative;
+              display: inline-block;
+              width: 210px;
+              height: 34px;
+            }
+
+            .switch input {display:none;}
+
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #ca2222;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+
+            .slider:before {
+              position: absolute;
+              content: "";
+              height: 26px;
+              width: 26px;
+              left: 4px;
+              bottom: 4px;
+              background-color: white;
+              -webkit-transition: .4s;
+              transition: .4s;
+            }
+
+            input:checked + .slider {
+              background-color: #F98B39;
+            }
+
+            input:focus + .slider {
+              box-shadow: 0 0 1px #2196F3;
+            }
+
+            input:checked + .slider:before {
+              -webkit-transform: translateX(174px);
+              -ms-transform: translateX(174px);
+              transform: translateX(174px);
+            }
+
+            /*------ ADDED CSS ---------*/
+            .on
+            {
+              display: none;
+            }
+
+            .on, .off
+            {
+              color: white;
+              position: absolute;
+              transform: translate(-50%,-50%);
+              top: 50%;
+              left: 50%;
+              font-size: 10px;
+              font-family: Verdana, sans-serif;
+            }
+
+            input:checked+ .slider .on
+            {display: block;}
+
+            input:checked + .slider .off
+            {display: none;}
+
+            /*--------- END --------*/
+
+            /* Rounded sliders */
+            .slider.round {
+              border-radius: 34px;
+            }
+
+            .slider.round:before {
+              border-radius: 50%;}
+          
+
+        </style>
     </head>
 
     <body>
@@ -23,19 +165,11 @@
 
             <!-- Main Header -->
             <?php require 'includes/header.php'; ?>
-			<header class="main-header fixed">
-   
-
-    <!--Header Lower-->
-   
-    <!--Header Lower End-->
-
-</header>
+			
             <!--End Main Header -->
 
 
             <!--Sidebar Navigation-->
-            <?php require 'includes/navigation.php'; ?>
             <!--Sidebar Nav End-->
 
             <!-- Main Slider -->
@@ -135,7 +269,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn light-btn">DONATE</a></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="<?php echo base_url()?>index.php/Others/Godonate" class="theme-btn light-btn">DONATE</a></div></div>
 
                                
 
@@ -228,6 +362,19 @@
                             <div class="text-right link"><a href="#" class="theme-btn btn-style-one">Make a Donation</a></div>
                         </div>
 
+                    </article>
+
+
+
+                    <article class="column default-column">
+                        <div class="pattern-layer"></div>
+
+                        <div class="column-inner">  
+                            <h3>Help 10140 people for education</h3>
+                            <h4>No one has ever become poor by giving</h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                            <div class="text-right link"><a href="#" class="theme-btn btn-style-one">BECOME A VOLUNTEER</a></div>
+                        </div>
                     </article>
 
                     <!--Progress Column-->
@@ -665,6 +812,306 @@
         <div class="scroll-to-top"><span class="fa fa-arrow-up"></span></div>
 
 
+
+
+<!--Login Section -->
+
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+                <div class="modal-dialog" style="width: 800px;" role="document">
+                    <div class="modal-content modal-info col-md-12" id="grad1">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
+                        </div>
+                        <div class="modal-body" >
+                           
+                                    <div id="expand" class="col-md-6 " style="margin-top: 10px;">
+                                     
+                                        <h3 class=" w3-lobster w3-xxxlarge rainbow"><b>Sign up for free...!!</b></h3>
+                                        <br>
+                                        <div class="wizard">
+
+
+                                         <div class="wizard-inner">
+
+
+                                        <ul class="nav nav-tabs"  role="tablist">
+
+
+                                            <li role="presentation" class="active"><a class="w3-lobster" href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1"><b>Login Info</b></a></li>
+                                            <li role="presentation"><a class="w3-lobster" href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2"><b>Account Info</b></a></li>
+                                        </ul>
+
+
+                                        </div>
+
+
+
+                                        <form method="post" action="<?php echo base_url() ?>index.php/User/Register">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" role="tabpanel" id="step1">
+                                            <div class="step1">
+                                                
+                                               
+                                           
+                                            <div class="form-group" style="margin-top:22px; ">
+                                            
+
+
+                                            
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+                                                
+                                            </div>
+                                             <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="password-field" type="password" class="form-control pwd" name="password" placeholder="Password">
+                                                     <span class="input-group-btn">
+                                                        <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                                      </span>
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input  type="password" class="form-control pwd1" name="password" placeholder="Password">
+                                                     <span class="input-group-btn">
+                                                        <button class="btn btn-default reveal1" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                                      </span>
+                                                </div>
+
+                                                
+                                            </div>
+                                               
+                                            </div>
+                                           
+                                            <div class=" pull-right">
+
+
+                                                <a role="button" id="next" class="next-step"><b>Next >>></b></a>
+                                                
+                                            </div>
+                                        
+                                             </div>
+
+
+                                        <div class="tab-pane col-md-12" role="tabpanel" id="step2" >
+                                            <div class="step2">
+
+                                                <div class="col-md-6">
+
+                                                <div class="form-group" style="margin-top:10px; ">
+                                            
+                                             
+                                                
+                                            
+                                                <label class="switch"><input class="form-control" type="checkbox" id="togBtn" onclick="myFunction()"><div class="slider round"><!--ADDED HTML --><span class="on">Join As Donor</span><span class="off">Join As Recipient</span><!--END--></div></label>
+
+
+                                                <div class="message1"><span>Join As a Donor<small></small></span></div>
+                                                <div class="message2"><span>For join as a Recipient You should <b>attach a proper validity recommendation </b><small></small></span></div>
+
+
+
+
+                                                
+                                            </div>
+                                             <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+
+                                                
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class=" pull-left">
+
+
+                                                <a role="button" id="prev" class="prev-step"><b><<< Prev</b></a>
+                                                
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <div class="col-md-6">
+
+
+
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <div class="input-group" id="attch">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span>
+                                                    <input id="filechoose" type="file" class="form-control" name ="file_name" placeholder="Attached your Recommendation..">
+                                                </div>
+
+                                                
+                                            </div>
+
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+                                                
+                                            </div>
+
+
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+
+
+                                            
+                                               <label>By clicking in "Register now", you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                                
+                                            </div>
+
+                                            <input type="submit" value="SIGN UP"  class="pull-right
+                                                theme-btn light-btn">
+
+
+                                        </div>
+                                            </div>
+
+                                         </div>
+
+                                     </div>
+                                   
+                                </form>
+
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div id="verticalline" class="vl"></div>
+                                    
+                                    <div class="col-md-6" id="signin"  style="margin-top: 10px;">
+                                       <h3 class=" w3-lobster w3-xxxlarge rainbow2"><b>Sign in...!!</b></h3>
+                                        <br>
+                                        <br>
+                                        <br>
+                                       
+                                        
+                                        <form method="post" action="<?php echo base_url() ?>index.php/User/loginchk">
+
+                                            <div class="form-group" style="margin-top:10px; ">
+                                            
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                                </div>
+
+
+                                            </div>
+                                            <div class="form-group" style="margin-top:6px; ">
+                                           <div class="input-group">
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="password-field" type="password" class="form-control pwd" name="password" placeholder="Password">
+                                                     <span class="input-group-btn">
+                                                        <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+                                                      </span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group" style="margin-top:10px; " >
+                                            
+
+
+                                            
+                                               <label><a href="#">Forget Password?</a></label>
+                                               <input type="submit" value="SIGNIN"  class="pull-right
+                                                theme-btn light-btn">
+                                                
+                                            </div>
+                                           
+                                            <br>
+                                            <div class="">
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="clearfix"></div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--End of Login Section -->
+
+
         <script src="<?php echo base_url()?>template/js/jquery.js"></script> 
         <script src="<?php echo base_url()?>template/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url()?>template/js/rev-plugins.js"></script>
@@ -711,7 +1158,159 @@
 
         </script>
 
+
+        <script type="text/javascript">
+            
+            $(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+        </script>
+
+
+        <script type="text/javascript">
+            
+            $(document).ready(function(){
+                $("#next").click(function(){
+                    $("#signin").hide();
+                    $("#verticalline").hide();
+                     $("#attch").hide();
+                    document.getElementById("togBtn").checked = true;
+                });
+
+                $("#prev").click(function(){
+                    $("#signin").show();
+                    $("#verticalline").show();
+                    $("#attch").hide();
+                    document.getElementById("togBtn").checked = true;
+                });
+                // $(".btn2").click(function(){
+                //     $("p").show();
+                // });
+            });
+
+
+          function myFunction() {
+    var checkBox = document.getElementById("togBtn");
+   
+    if (checkBox.checked == true){
+        $("#attch").hide();
+    } else {
+        $("#filechoose").css("background-color", " #F92615");
+       $("#attch").show();
+    }
+}
+
+
+            $('#next').on('click', function(e){
+
+                $('#expand').toggleClass('col-md-6');
+                 $('#expand').toggleClass('col-md-12');
+
+            });
+            $('#prev').on('click', function(e){
+
+                
+                 $('#expand').toggleClass('col-md-12');
+                 $('#expand').toggleClass('col-md-6');
+
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            
+
+
+                        $(".reveal").on('click',function() {
+                var $pwd = $(".pwd");
+                if ($pwd.attr('type') === 'password') {
+                    $pwd.attr('type', 'text');
+                } else {
+                    $pwd.attr('type', 'password');
+                }
+            });
+
+
+                         $(".reveal1").on('click',function() {
+                var $pwd = $(".pwd1");
+                if ($pwd.attr('type') === 'password') {
+                    $pwd.attr('type', 'text');
+                } else {
+                    $pwd.attr('type', 'password');
+                }
+            });
+        </script>
+
+
+        <script type="text/javascript">
+            
+
+            $(function() {
+            $(".message1").css("display", "none");
+            $(".message2").css("display", "none");
+            $("#togBtn").click(function() {
+                if (this.checked) {
+                    $(".message1").stop(true,true).fadeIn("fast").fadeOut(15000);
+                    $(".message2").hide();
+                }
+                else {
+                    $(".message1").stop(true,true).hide();
+                    $(".message2").stop(true,true).fadeIn("fast").fadeOut(15000);
+                }
+
+            });
+        });
+        </script>
+
     </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Mirrored from wp1.themexlab.com/html/volunteer/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Mar 2017 04:33:06 GMT -->
 </html>
