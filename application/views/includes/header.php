@@ -20,10 +20,10 @@
     </div>
 
     <!--Header Lower-->
-    <div class="header-lower">
+    <div class="header-lower" style="position: absolute;">
         <div class="auto-container clearfix">
             <!--Logo-->
-            <div class="logo"><a href="index-2.html"><img src="<?php echo base_url()?>template/images/logo.png" alt="Volunteer" title="Volunteer"></a></div>
+            <div class="logo"><a href="index-2.html"><img src="<?php echo base_url()?>template/images/manupawralogo.png" alt="Volunteer" title="Volunteer"></a></div>
 
             <!--Right Container-->
             <div class="right-cont clearfix">
@@ -46,32 +46,48 @@
 
                             </li>
                             <li class="dropdown"><a href="#">Pages</a>
-                                <ul class="submenu">
-                                    <li><a href="about-us.php">About Us</a></li>
-                                    <li><a href="features.php">Features</a></li>
+                    <ul class="submenu">
+                        <li><a href="<?php echo base_url()?>index.php/Others/GoAboutUs">About Us</a></li>
+                        <li><a href="<?php echo base_url()?>index.php/Others/GoVolunteer">Features</a></li>
+                        <li><a href="our-services.php">Sevices</a></li>
+                        <li><a href="faq.php">FAQ</a></li>                 
+                        <li class="dropdown">
+                            <a href="testimonial-v1.php">Testimonials</a>
+                            <ul class="submenu">
+                                <li><a href="testimonial-v1.php">Testimonial V1</a></li>
+                                <li><a href="testimonial-v2.php">Testimonial V2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="gallery.php">Gallery</a>
+                            <ul class="submenu">
+                                <li><a href="gallery.php">Gallery Style One</a></li>
+                                <li><a href="gallery-2.php">Gallery Style Two</a></li>
+                                <li><a href="gallery-3.php">Gallery Style Three</a></li>
+                                <li><a href="gallery-4.php">Gallery Style Four</a></li>
+                                <li><a href="gallery-5.php">Gallery Style Five</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="donation.php">Donation</a></li>                 
+                        <li><a href="become-a-volunteer.php">Become a Volunteer</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    
+                    <a href="#" class="use1" data-toggle="modal" data-target="#myModal4">Causes</a>
+                    <ul class="submenu">
+                        <li><a href="single-causes.php">Single Causes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="event.php">Event</a>
+                    <ul class="submenu">
+                        <li><a href="single-event.php">Single Event</a></li>
+                    </ul>
+                </li>
 
-                                    <li><a href="faq.php">FAQ</a></li>                 
 
-                                    <li class="dropdown"><a href="gallery.php">Gallery</a></li>
-                                    <li><a href="donation.php">Donation</a></li>                 
-                                    <li><a href="become-a-volunteer.php">Become a Volunteer</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="causes.php">Volunteer</a>
-<!--                                <ul class="submenu">
-                                    <li><a href="single-causes.php">Single Causes</a></li>
-                                </ul>-->
-                            </li>
-                            <li class="dropdown">
-                                <a href="event.php">Causes</a>
-<!--                                <ul class="submenu">
-                                    <li><a href="single-event.php">Single Event</a></li>
-                                </ul>-->
-                            </li>
-
-                            <li class="dropdown"><a href="blog.php">Blog</a></li>
-                            <li class="dropdown"><a href="contact.php">Contact</a>
+                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoBlog">Blog</a></li>
+                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoContact">Contact</a>
 <!--                                <ul class="submenu from-left">
                                     <li><a href="contact.php">Contact Style One</a></li>
                                     <li><a href="contact-2.php">Contact Style Two</a></li>

@@ -8,7 +8,7 @@
         <!--Main Navigation-->
         <nav class="navigation">
             <ul>
-                <li class="current dropdown"><a href="index-2.php">Home</a>
+               <!--  <li class="current dropdown"><a href="index-2.php">Home</a>
                     <ul class="submenu">
                         <li><a href="index-2.php">Homepage Style One</a></li>
                         <li><a href="index-3.php">Homepage Style Two</a></li>
@@ -18,11 +18,11 @@
                         <li><a href="index-7.php">Fullscreen Static Image</a></li>
 
                     </ul>
-                </li>
+                </li> -->
                 <li class="dropdown"><a href="#">Pages</a>
                     <ul class="submenu">
-                        <li><a href="about-us.php">About Us</a></li>
-                        <li><a href="features.php">Features</a></li>
+                        <li><a href="<?php echo base_url()?>index.php/Others/AboutUs">About Us</a></li>
+                        <li><a href="<?php echo base_url()?>index.php/Others/AboutUs">Features</a></li>
                         <li><a href="our-services.php">Sevices</a></li>
                         <li><a href="faq.php">FAQ</a></li>                 
                         <li class="dropdown">
