@@ -101,7 +101,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url()?>index.php/admin_Controller/viewPage/admin_vol_recipients"><i class="fa fa-circle-o"></i> Recipients</a></li>
+            <li><a href="<?php echo base_url()?>index.php/admin_Controller/viewPage/admin_vol_donors"><i class="fa fa-circle-o"></i> Donors</a></li>
+            <li><a href="<?php echo base_url()?>index.php/admin_Controller/viewPage/admin_vol_recipients"><i class="fa fa-circle-o"></i> Recipients</a></li>     
+            <li><a href="<?php echo base_url()?>index.php/admin_Controller/viewPage/admin_vol_requests"><i class="fa fa-circle-o"></i> Requests</a></li>
 
             <li><a href="<?php echo base_url()?>ui/pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
             <li><a href="<?php echo base_url()?>ui/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>

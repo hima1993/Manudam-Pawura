@@ -7,7 +7,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Recipient
+        Donor
         <small>details</small>
       </h1>
       <ol class="breadcrumb">
@@ -22,7 +22,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <div class="box box-success">
+          <div class="box box-primary">
             <div class="box-header">
               <h3 class="box-title">Extended details</h3>
             </div>
@@ -32,10 +32,11 @@
                 <thead>
                   <tr>
                     <th>NIC</th>
-                    <th>Resipient name</th>
+                    <th>Full name</th>
                     <th>Mobile</th>
-                    <th>Address</th>                  
-                    <th>Rating</th>
+                    <th>Address</th>
+                    <th>Donation Count</th>
+                    <th>Ratings</th>                   
                   </tr>
                 </thead>
                 <tbody>
@@ -44,8 +45,9 @@
                     <td>Harin Samaranayake</td>
                     <td>766572833</td>
                     <td>41/1 Papiliyana Mw, Nugegoda</td>
-                    <td>96.67%</td>                    
-                  </tr>               
+                    <td>10</td> 
+                    <td>97.45%</td>                   
+                  </tr>       
                 </tbody>
                 <tfoot>
                 <tr>
