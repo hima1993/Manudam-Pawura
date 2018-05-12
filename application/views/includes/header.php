@@ -23,7 +23,7 @@
     <div class="header-lower" style="position: absolute;">
         <div class="auto-container clearfix">
             <!--Logo-->
-            <div class="logo"><a href="index-2.html"><img src="<?php echo base_url()?>template/images/manupawralogo.png" alt="Volunteer" title="Volunteer"></a></div>
+            <div class="logo"><a href="index-2.html"><img src="<?php echo base_url() ?>template/images/manupawralogo.png" alt="Volunteer" title="Volunteer"></a></div>
 
             <!--Right Container-->
             <div class="right-cont clearfix">
@@ -31,7 +31,7 @@
                 <!-- Main Menu -->
                 <nav class="main-menu">
                     <div class="navbar-header">
-                        <!-- Toggle Button -->      
+                        <!-- Toggle Button -->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -40,17 +40,17 @@
 
                     </div>
 
-                    <div class="navbar-collapse collapse clearfix">                                                                                              
+                    <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation">
                             <li class="current dropdown"><a href="index.php">Home</a>
 
                             </li>
                             <li class="dropdown"><a href="#">Pages</a>
                     <ul class="submenu">
-                        <li><a href="<?php echo base_url()?>index.php/Others/GoAboutUs">About Us</a></li>
-                        <li><a href="<?php echo base_url()?>index.php/Others/GoVolunteer">Features</a></li>
+                        <li><a href="<?php echo base_url() ?>index.php/Others/GoAboutUs">About Us</a></li>
+                        <li><a href="<?php echo base_url() ?>index.php/Others/GoVolunteer">Features</a></li>
                         <li><a href="our-services.php">Sevices</a></li>
-                        <li><a href="faq.php">FAQ</a></li>                 
+                        <li><a href="faq.php">FAQ</a></li>
                         <li class="dropdown">
                             <a href="testimonial-v1.php">Testimonials</a>
                             <ul class="submenu">
@@ -67,12 +67,12 @@
                                 <li><a href="gallery-5.php">Gallery Style Five</a></li>
                             </ul>
                         </li>
-                        <li><a href="donation.php">Donation</a></li>                 
+                        <li><a href="donation.php">Donation</a></li>
                         <li><a href="become-a-volunteer.php">Become a Volunteer</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    
+
                     <a href="#" class="use1" data-toggle="modal" data-target="#myModal4">Causes</a>
                     <ul class="submenu">
                         <li><a href="single-causes.php">Single Causes</a></li>
@@ -85,10 +85,39 @@
                     </ul>
                 </li>
 
+                   <li class="dropdown">
+                    <a href="event.php">Submit</a>
+                    <ul class="submenu">
 
-                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoBlog">Submit</a></li>
-                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoContact">Contact</a>
-                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Admin_Controller/viewPage/admin_index">LOGIN</a>
+                        <li><a href="<?php echo base_url() ?>index.php/Others/GoBlog">Infrastructure</a></li>
+                        <li><a href="single-event.php">Equipment</a>
+                               <ul class="submenu">
+                        <li><a href="<?php echo base_url() ?>index.php/Others/GoEquip">Sports</a></li>
+                        <li><a href="single-event.php">Stationary</a></li>
+                        <li><a href="single-event.php">Electronic</a></li>
+                         <li><a href="single-event.php">Other</a></li>
+
+                         </ul>
+
+
+
+                        </li>
+                        <li><a href="single-event.php">Health</a>
+                            <ul class="submenu">
+                        <li><a href="single-event.php">Water</a></li>
+                        <li><a href="single-event.php">First Aid</a></li>
+                        <li><a href="single-event.php">Shoes and slippers</a></li>
+
+                         </ul>
+
+
+                        </li>
+                    </ul>
+                    </li>
+
+                          <!--  <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Others/GoBlog">Submit</a></li> -->
+                            <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Others/GoContact">Contact</a>
+                            <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Admin_Controller/viewPage/admin_index">LOGIN</a>
 <!--                                <ul class="submenu from-left">
                                     <li><a href="contact.php">Contact Style One</a></li>
                                     <li><a href="contact-2.php">Contact Style Two</a></li>
