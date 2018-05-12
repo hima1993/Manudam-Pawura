@@ -194,7 +194,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title"><h2>We try to help people with volunteering</h2></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title"><h2>Online Platform to help people in need</h2></div></div>
 
                                 <div class="tp-caption lfb tp-resizeme"
                                      data-x="center" data-hoffset="0"
@@ -241,7 +241,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title with-bg"><h2>We try to help people with volunteering</h2></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title with-bg"><h2>Online Platform to help people in need</h2></div></div>
 
                                 <div class="tp-caption lfr tp-resizeme"
                                      data-x="center" data-hoffset="0"
@@ -290,7 +290,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title with-bg"><h2>We try to help people with volunteering</h2></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="title with-bg"><h2>Online Platform to help people in need</h2></div></div>
 
                                 <div class="tp-caption lfl tp-resizeme"
                                      data-x="center" data-hoffset="0"
