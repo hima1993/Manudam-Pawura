@@ -222,8 +222,7 @@
                     <li><a data-toggle="tab" href="#pending"
                            style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Food</a></li>
                     <li><a data-toggle="tab" href="#notasigned"
-                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinkin
-                            water</a></li>
+                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Stationary</a></li>
                     <li><a data-toggle="tab" href="#tab4"
                            style="margin-right:20px;background-color: #d71921;color: white;width: 150px">taps</a></li>
 
