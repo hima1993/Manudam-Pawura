@@ -88,6 +88,7 @@
 
                             <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoBlog">Blog</a></li>
                             <li class="dropdown"><a href="<?php echo base_url()?>index.php/Others/GoContact">Contact</a>
+                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Admin_Controller/viewPage/admin_index">LOGIN</a>
 <!--                                <ul class="submenu from-left">
                                     <li><a href="contact.php">Contact Style One</a></li>
                                     <li><a href="contact-2.php">Contact Style Two</a></li>
