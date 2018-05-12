@@ -265,30 +265,13 @@
 
     <div id="pending" class="tab-pane fade">
 
-      <div class="container">
-  <form id="contact" action="" method="post">
+        <div class="panel panel-default">
+            <div class="panel-body">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your School" type="url" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Please Describe your request" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
 
-  </form>
-</div>
+            </div>
+
+        </div>
 
 
 
@@ -298,30 +281,13 @@
 
 
     <div id="notasigned" class="tab-pane fade">
-      <div class="container">
-  <form id="contact" action="" method="post">
+        <div class="panel panel-default">
+            <div class="panel-body">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your School" type="url" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Please Describe your request" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
 
-  </form>
-</div>
+            </div>
+
+        </div>
 
     </div>
 
