@@ -61,7 +61,7 @@
         #contact {
             background: #F9F9F9;
             padding: 25px;
-            margin: 150px 0;
+            margin:  0;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         }
 
@@ -166,7 +166,7 @@
 
         li.active a {
 
-            background-color: white !important;
+            background-color: #ACF619 !important;
             color: black !important;
 
         }
@@ -181,12 +181,12 @@
 <div class="preloader"></div>
 
 <!-- Main Header -->
-<?php require 'includes/header.php'; ?>
+<?php require 'includes/header.php';?>
 <!--End of Main Header -->
 
 
 <!--Sidebar Navigation-->
-<?php require 'includes/navigation.php'; ?>
+<?php require 'includes/navigation.php';?>
 <!--Sidebar Nav End-->
 
 <div class="page-wrapper" style="min-height: 150px;">
@@ -194,12 +194,6 @@
 </div>
 
 
-<!--Bread Crumb-->
-<div class="bread-crumb">
-    <div class="auto-container">
-        Pages &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">Blog</a>
-    </div>
-</div>
 
 <!--Sidebar Page-->
 <div class="sidebar-page">
@@ -209,157 +203,117 @@
             <!--Content Side-->
             <!-- <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12"> -->
 
-            <div class="col-lg-9"
-                 style="background-color: #ffffff;height:100%; margin-left:8px;width: 918px;margin-bottom: 30px">
+<div class="col-lg-9" style="background-color: #ffffff;height:100%; margin-left:150px;width: 918px">
 
 
-                <ul class="nav nav-tabs" style="padding:5px">
 
 
-                    <li class="active"><a data-toggle="tab" href="#received"
-                                          style="margin-left: 30px;margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinking
-                            water</a></li>
-                    <li><a data-toggle="tab" href="#pending"
-                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Food</a></li>
-                    <li><a data-toggle="tab" href="#notasigned"
-                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinkin
-                            water</a></li>
-                    <li><a data-toggle="tab" href="#tab4"
-                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">taps</a></li>
+<ul class="nav nav-tabs" style="padding:5px">
 
-                </ul>
 
+    <li class="active"><a data-toggle="tab" href="#received" style="margin-left: 30px;margin-right:20px;background-color: #F62305;color: white;width: 150px">Drinking water</a></li>
+    <li><a data-toggle="tab" href="#pending" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Food</a></li>
+    <li><a data-toggle="tab" href="#notasigned" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Drinkin water</a></li>
+    <li><a data-toggle="tab" href="#tab4" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">taps</a></li>
 
-                <div class="tab-content">
+</ul>
 
-                    <div id="received" class="tab-pane fade in active">
 
-                        <div class="panel panel-default">
 
-                            <div class="panel-body">
 
 
-                                <ul class="nav nav-tabs" style="padding:5px">
 
 
-                                    <li class="active"><a data-toggle="tab" href="#received"
-                                                          style="margin-left: 30px;margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinking
-                                            water</a></li>
-                                    <li><a data-toggle="tab" href="#pending"
-                                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Food</a>
-                                    </li>
+<div class="tab-content">
 
-                                    <li><a data-toggle="tab" href="#tab4"
-                                           style="margin-right:20px;background-color: #d71921;color: white;width: 150px">taps</a>
-                                    </li>
+    <div id="received" class="tab-pane fade in active">
 
-                                </ul>
+        <div class="container">
+  <form id="contact" action="" method="post">
 
-                                <div class="tab-content">
-                                    <div id="received" class="tab-pane fade">
+    <fieldset>
+      <input placeholder="School" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your School" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Please Describe your request" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
 
-                                        <div class="panel panel-default">
-                                            <div class="panel-body">
-                                                <h1>dwaterrijk </h1>
+  </form>
+</div>
 
-                                            </div>
 
-                                        </div>
 
 
-                                    </div>
+    </div>
 
 
-                                    <div id="pending" class="tab-pane fade">
 
-                                        <div class="panel panel-default">
-                                            <div class="panel-body">
 
 
-                                            </div>
 
-                                        </div>
+    <div id="pending" class="tab-pane fade">
 
-
-                                    </div>
-
-
-                                    <div id="tab4" class="tab-pane fade">
-
-                                        <div class="panel panel-default">
-                                            <div class="panel-body">
-
-
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div id="pending" class="tab-pane fade">
-
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-
-                    <div id="notasigned" class="tab-pane fade">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div id="tab4" class="tab-pane fade in active">
-
-                        <div class="panel panel-default">
-
-                            <div class="panel-body">
-
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
 
 
             </div>
 
-
-            <!-- <br> -->
-            <!-- Theme Pagination -->
+        </div>
 
 
-            <!-- </div> -->
-            <!--Content Side-->
 
-            <!--Sidebar-->
+    </div>
 
-            <!--Sidebar-->
+
+
+
+    <div id="notasigned" class="tab-pane fade">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="tab4" class="tab-pane fade in active">
+
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+</div
+
+
+
 
 
         </div>
@@ -368,7 +322,7 @@
 
 
 <!--Main Footer-->
-<?php require 'includes/footer.php'; ?>
+<?php require 'includes/footer.php';?>
 
 <!--End pagewrapper-->
 
