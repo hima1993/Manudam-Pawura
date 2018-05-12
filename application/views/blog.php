@@ -160,6 +160,15 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+
+  li.active a {
+
+background-color: white !important;
+color: black !important;
+
+}
+
         </style>
     </head>
 
@@ -197,30 +206,190 @@ fieldset {
 
                         <!--Content Side-->	
                         <!-- <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12"> -->
-                            <div class="container">  
-  <form id="contact" action="" method="post">
-    
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your School" type="url" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Please Describe your request" tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-    
-  </form>
+ 
+                        <div class="col-lg-9" style="background-color: #ffffff;height:100%; margin-left:8px;width: 918px;margin-bottom: 30px">
+
+
+
+
+    <ul class="nav nav-tabs" style="padding:5px">
+
+
+        <li class="active"><a data-toggle="tab" href="#received" style="margin-left: 30px;margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinking water</a></li>
+        <li><a data-toggle="tab" href="#pending" style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Food</a></li>
+        <li><a data-toggle="tab" href="#notasigned" style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinkin water</a></li>
+        <li><a data-toggle="tab" href="#tab4" style="margin-right:20px;background-color: #d71921;color: white;width: 150px">taps</a></li>
+
+    </ul>
+   
+
+
+
+
+
+
+    <div class="tab-content">
+
+        <div id="received" class="tab-pane fade in active">
+
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+                
+                   
+    <ul class="nav nav-tabs" style="padding:5px">
+
+
+<li class="active"><a data-toggle="tab" href="#received" style="margin-left: 30px;margin-right:20px;background-color: #d71921;color: white;width: 150px">Drinking water</a></li>
+<li><a data-toggle="tab" href="#pending" style="margin-right:20px;background-color: #d71921;color: white;width: 150px">Food</a></li>
+
+<li><a data-toggle="tab" href="#tab4" style="margin-right:20px;background-color: #d71921;color: white;width: 150px">taps</a></li>
+
+</ul>
+
+ <div class="tab-content">
+ <div id="received" class="tab-pane fade">
+
+<div class="panel panel-default">
+    <div class="panel-body">
+      <h1>dwaterrijk </h1>
+      
+    </div>
+
 </div>
+
+
+
+</div>
+
+
+
+
+ <div id="pending" class="tab-pane fade">
+
+<div class="panel panel-default">
+    <div class="panel-body">
+
+      
+    </div>
+
+</div>
+
+
+
+</div>
+
+
+
+
+ <div id="tab4" class="tab-pane fade">
+
+<div class="panel panel-default">
+    <div class="panel-body">
+
+      
+    </div>
+
+</div>
+
+
+
+</div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div id="pending" class="tab-pane fade">
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                  
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div id="notasigned" class="tab-pane fade">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+        <div id="tab4" class="tab-pane fade in active">
+
+            <div class="panel panel-default">
+
+                <div class="panel-body">
+
+                   
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             
 
                             <!-- <br> -->
@@ -287,6 +456,8 @@ fieldset {
             ga('send', 'pageview');
 
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </body>
 
