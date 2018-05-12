@@ -15,6 +15,152 @@
         <link href="css/responsive.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: #801a00;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+        </style>
     </head>
 
     <body>
@@ -50,182 +196,43 @@
                     <div class="row clearfix">
 
                         <!--Content Side-->	
-                        <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
-                            <section class="blog-section">
-                                <div class="sec-title">
-                                    <h2>Our <strong>Blog</strong></h2>
-                                </div>
+                        <!-- <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12"> -->
+                            <div class="container">  
+  <form id="contact" action="" method="post">
+    
+    <fieldset>
+      <input placeholder="School" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your School" type="url" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Please Describe your request" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    
+  </form>
+</div>
+                            
 
-                                <!--Blog Post-->
-                                <div class="blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <article class="column-inner">
-                                        <figure class="image-box">
-                                            <a href="#"><img src="images/resource/blog-image-4.jpg" alt="" title="Blog"></a>
-                                            <div class="post-options">
-                                                <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
-                                                <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="lower-part">
-                                            <div class="post-date"><span class="day">12</span> <span class="month">APR</span></div>
-                                            <h3><a href="#">Help to get water in Africa</a></h3>
-                                            <div class="post-info"><a href="#"><span class="icon flaticon-user197"></span> &ensp;Jonathan Doe</a> &ensp; <a href="#"><span class="icon flaticon-speechbubble65"></span> &ensp;31 comments</a></div>
-                                            <div class="post-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                                            <div class="text-right link"><a href="#" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!--Blog Post-->
-                                <div class="blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <article class="column-inner">
-                                        <figure class="image-box with-carousel">
-                                            <!--Image Carousel-->
-                                            <div class="image-carousel">
-                                                <ul class="slider">
-                                                    <li class="slide-item"><img src="images/resource/blog-image-5.jpg" alt=""></li>
-                                                    <li class="slide-item"><img src="images/resource/blog-image-4.jpg" alt=""></li>
-                                                    <li class="slide-item"><img src="images/resource/blog-image-6.jpg" alt=""></li>
-                                                </ul>    
-                                            </div>
-                                            <div class="post-options">
-                                                <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
-                                                <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="lower-part">
-                                            <div class="post-date"><span class="day">10</span> <span class="month">APR</span></div>
-                                            <h3><a href="#">Spend shoes and clothes</a></h3>
-                                            <div class="post-info"><a href="#"><span class="icon flaticon-user197"></span> &ensp;Jonathan Doe</a> &ensp; <a href="#"><span class="icon flaticon-speechbubble65"></span> &ensp;24 comments</a></div>
-                                            <div class="post-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
-                                            <div class="text-right link"><a href="#" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!--Blog Post-->
-                                <div class="blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <article class="column-inner">
-                                        <figure class="image-box">
-                                            <a href="#"><img src="images/resource/blog-image-6.jpg" alt="" title="Blog"></a>
-                                            <div class="post-options">
-                                                <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
-                                                <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
-                                            </div>
-                                        </figure>
-                                        <div class="lower-part">
-                                            <div class="post-date"><span class="day">6</span> <span class="month">APR</span></div>
-                                            <h3><a href="#">Help africans for an education</a></h3>
-                                            <div class="post-info"><a href="#"><span class="icon flaticon-user197"></span> &ensp;Jonathan Doe</a> &ensp; <a href="#"><span class="icon flaticon-speechbubble65"></span> &ensp;17 comments</a></div>
-                                            <div class="post-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
-                                            <div class="text-right link"><a href="#" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-
-                            </section>
-
-                            <br>
+                            <!-- <br> -->
                             <!-- Theme Pagination -->
-                            <div class="theme-pagination text-left">
-                                <ul>
-                                    <li><a href="#"><span class="flaticon-left222"></span>&ensp;Prev</a></li>
-                                    <li><a href="#" class="active">01</a></li>
-                                    <li><a href="#">02</a></li>
-                                    <li><a href="#">....</a></li>
-                                    <li><a href="#">10</a></li>
-                                    <li><a href="#">11</a></li>
-                                    <li><a href="#">Next&ensp;<span class="flaticon-right11"></span></a></li>
-                                </ul>
-                            </div>
+                            
 
 
-                        </div>
+                        <!-- </div> -->
                         <!--Content Side-->
 
                         <!--Sidebar-->	
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                            <aside class="sidebar">
-
-                                <!-- Search Form -->
-                                <div class="widget search-form">
-
-                                    <form method="post" action="http://wp1.themexlab.com/html/volunteer/blog.html">
-                                        <div class="form-group">
-                                            <input type="search" name="search" value="" placeholder="search for something">
-                                            <button type="submit" name="submit"><span class="fa fa-search"></span></button>
-                                        </div>
-                                    </form>
-
-                                </div>
-
-                                <!-- Popular Categories -->
-                                <div class="widget popular-categories wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="sec-title"><h3>Popular <strong>categories</strong></h3></div>
-
-                                    <ul class="list">
-                                        <li><span class="icon flaticon-blank36"></span> <a href="#">Online spending dahsboard</a></li>
-                                        <li><span class="icon flaticon-blank36"></span> <a href="#">Worldwide charity programs</a></li>
-                                        <li><span class="icon flaticon-blank36"></span> <a href="#">Awesome volunteers</a></li>
-                                        <li><span class="icon flaticon-blank36"></span> <a href="#">Leading volunteer groups</a></li>
-                                        <li><span class="icon flaticon-blank36"></span> <a href="#">Charity programs for children</a></li>
-                                    </ul>
-
-                                </div>
-
-                                <!-- Recent Posts -->
-                                <div class="widget recent-posts wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="sec-title"><h3>Recent <strong>posts</strong></h3></div>
-
-                                    <div class="post">
-                                        <div class="post-thumb"><a href="#"><img src="images/resource/post-thumb-1.jpg" alt=""></a></div>
-                                        <h4><a href="#">Awesome Blogpost</a></h4>
-                                        <div class="post-info">Dec 12, 2015 in <a href="#"><em>general</em></a></div>
-                                    </div>
-
-                                    <div class="post">
-                                        <div class="post-thumb"><a href="#"><img src="images/resource/post-thumb-2.jpg" alt=""></a></div>
-                                        <h4><a href="#">Creating a new layout</a></h4>
-                                        <div class="post-info">Dec 8, 2015 in <a href="#"><em>charity</em></a></div>
-                                    </div>
-
-                                    <div class="post">
-                                        <div class="post-thumb"><a href="#"><img src="images/resource/post-thumb-3.jpg" alt=""></a></div>
-                                        <h4><a href="#">We work for your life</a></h4>
-                                        <div class="post-info">Dec 1, 2015 in <a href="#"><em>donations</em></a></div>
-                                    </div>
-
-                                </div>
-
-                                <!-- Popular Tags -->
-                                <div class="widget popular-tags">
-                                    <div class="sec-title"><h3>Popular <strong>tags</strong></h3></div>
-
-                                    <a href="#">awesome</a> <a href="#">strategy</a> <a href="#">development</a> <a href="#">css</a> <a href="#">photoshop</a> <a href="#">photography</a> <a href="#">html</a> <a href="#">charity</a> <a href="#">charity</a> <a href="#">organisations</a> <a href="#">php</a> <a href="#">foundation</a> <a href="#">donations</a> <a href="#">money</a> <a href="#">children</a> <a href="#">spendings</a> <a href="#">help</a> <a href="#">housing</a>
-
-                                </div>
-
-                                <!--Twitter Feeds-->
-                                <div class="widget twitter-feeds wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="sec-title"><h3>Recent <strong>Tweets</strong></h3>	</div>
-                                    <div class="feed">
-                                        <div class="icon"><span class="fa fa-twitter"></span></div>
-                                        <div class="feed-content">Help our children in south  africa  <a href="#">@http://t.co/8dfkjht</a></div>
-                                        <div class="time text-right"><em>15 mins ago</em></div>
-                                    </div>
-
-                                    <div class="feed">
-                                        <div class="icon"><span class="fa fa-twitter"></span></div>
-                                        <div class="feed-content">We reach a number of 1000 volunteers  <a href="#">@http://t.co/7gfkjht</a></div>
-                                        <div class="time text-right"><em>15 mins ago</em></div>
-                                    </div>
-
-                                </div>
-
-                            </aside>
-
-
-                        </div>
+                        
                         <!--Sidebar-->
 
 
