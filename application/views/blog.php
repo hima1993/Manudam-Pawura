@@ -211,10 +211,10 @@
 <ul class="nav nav-tabs" style="padding:5px">
 
 
-    <li class="active"><a data-toggle="tab" href="#received" style="margin-left: 30px;margin-right:20px;background-color: #F62305;color: white;width: 150px">Drinking water</a></li>
-    <li><a data-toggle="tab" href="#pending" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Food</a></li>
-    <li><a data-toggle="tab" href="#notasigned" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Drinkin water</a></li>
-    <li><a data-toggle="tab" href="#tab4" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">taps</a></li>
+    <li class="active"><a data-toggle="tab" href="#received" style="margin-left: 30px;margin-right:20px;background-color: #F62305;color: white;width: 150px">Water Facilities</a></li>
+    <li><a data-toggle="tab" href="#pending" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Infrastructure</a></li>
+    <li><a data-toggle="tab" href="#notasigned" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Stationary Facilities</a></li>
+    <li><a data-toggle="tab" href="#tab4" style="margin-right:20px;background-color: #F62305;color: white;width: 150px">Sanitory Facilities</a></li>
 
 </ul>
 
@@ -231,9 +231,7 @@
         <div class="container">
         <form id="contact" action="" method="post">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
+   
     <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
@@ -268,9 +266,7 @@
                <div class="container">
         <form id="contact" action="" method="post">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
+   
     <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
@@ -301,9 +297,7 @@
              <div class="container">
         <form id="contact" action="" method="post">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
+    
     <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
@@ -331,9 +325,7 @@
                <div class="container">
         <form id="contact" action="" method="post">
 
-    <fieldset>
-      <input placeholder="School" type="text" tabindex="1" required autofocus>
-    </fieldset>
+    
     <fieldset>
       <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
