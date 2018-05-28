@@ -15,6 +15,18 @@
         <link href="<?php echo base_url()?>template/css/responsive.css" rel="stylesheet">
 
 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ring/Circle Toggle Navigation</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href="<?php echo base_url()?>template/css/responsive.css" rel="stylesheet">
+        <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+       
+
+
 
 
 
@@ -152,6 +164,131 @@
 
             .slider.round:before {
               border-radius: 50%;}
+
+ .con {
+  width: 550px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+
+
+.menu_opener {
+  display: none;
+}
+
+.menu_opener:checked ~ .link_one {
+  top: -98px;
+  left: 200px;
+  bottom: 5000px;
+
+}
+.menu_opener:checked ~ .link_two {
+  left: 395px;
+}
+.menu_opener:checked ~ .link_three {
+  top: 250px;
+  left: 200px;
+}
+.menu_opener:checked ~ .link_four {
+  left: 5px;
+}
+.menu_opener:checked ~ .barre_hamburger {
+  opacity: 0;
+}
+.menu_opener:checked ~ .menu_opener_label:after {
+  transform: rotate(45deg);
+  top: 70px;
+}
+.menu_opener:checked ~ .menu_opener_label:before {
+  transform: rotate(-45deg);
+  top: 70px;
+}
+
+.menu_opener_label {
+  background: #f1c40f;
+  width: 150px;
+  height: 150px;
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 175px;
+  z-index: 10;
+}
+.menu_opener_label:after {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: #000;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu_opener_label:before {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background: #000;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.barre_hamburger {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  top: 120px;
+  left: 225px;
+  background: #000;
+  z-index: 20;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_general {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 63px;
+  left: 210px;
+  background: #ecf0f1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_one {
+  background: url("<?php echo base_url()?>template/images/w.png") #f1c40f no-repeat center center;
+}
+
+
+
+.link_two {
+  background: url("<?php echo base_url()?>template/images/stat.png") #f1c40f no-repeat center center;
+}
+
+.link_three {
+  background: url("<?php echo base_url()?>template/images/infra.png") #f1c40f no-repeat center center;
+}
+
+.link_four {
+  background: url("<?php echo base_url()?>template/images/san.png") #f1c40f no-repeat center center;
+}
+
+
+
+
+
+
           
 
         </style>
@@ -165,6 +302,9 @@
 
             <!-- Main Header -->
             <?php require 'includes/header.php'; ?>
+
+
+
 			
             <!--End Main Header -->
 
@@ -269,7 +409,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="<?php echo base_url()?>index.php/Others/Godonate" class="theme-btn light-btn">DONATE</a></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a style="margin-left:190px; " href="#" class="theme-btn light-btn">MAKE DONATE</a> <a id="topadd" href="#menutop1" style="margin-left:100px; " class="theme-btn light-btn">ADD PROJECT</a></div></div>
 
                                
 
@@ -318,7 +458,7 @@
                                      data-endelementdelay="0.3"
                                      data-endspeed="1200"
                                      data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn light-btn">DONATE</a></div></div>
+                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a  style="margin-left:190px; " href="<?php echo base_url()?>index.php/Others/Godonate" class="theme-btn light-btn">MAKE DONATE</a> <a id="topadd" href="#menutop1" style="margin-left:100px; " class="theme-btn light-btn">ADD PROJECT</a></div></div>
 
                                 
 
@@ -377,10 +517,132 @@
                         </div>
                     </article>
 
+
+                </div>
+
                     <!--Progress Column-->
-                   
+
 
             </section>
+
+            <br>
+            <br>
+            <section id="menutop1">
+
+ <h1  id="menutop" style="text-align: center;">ADD YOUR VALUABLE PROJECT HERE</h1> 
+
+ </section>
+             <section id="addproject" class="tri-column-fluid" style="padding-top: 50px; padding-bottom: 50px;">
+                <div class="tri-column-outer clearfix">
+
+
+
+                    <article class="column default-column" style="background-color: #F19161;">
+                        <div class="column-inner">  
+                            <h3>Help 10140 people for education</h3>
+                            <h4>No one has ever become poor by giving</h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                            <div class="text-right link"><a href="#" class="theme-btn btn-style-one">BECOME A VOLUNTEER</a></div>
+                        </div>
+
+
+                    </article>
+
+
+
+                     <article class="column carousel-column" >
+
+                        
+
+                         <input onclick="mynewFunction();" type="checkbox" id="menu_opener_id" class="menu_opener">
+  <label for="menu_opener_id" class="menu_opener_label"></label>
+  <div class="barre_hamburger" ></div>
+  <a   class="link_one link_general" id="link_one"></a>
+
+  <a  class="link_two link_general" id="link_two" ></a>
+
+    <a  class="link_three link_general" id="link_three"></a>
+
+  <a  class="link_four link_general" id="link_four"></a>
+
+
+  </input>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+  $("#menu_opener_id").click(function(){
+        $("#menutop").hide();
+
+});
+
+</script>
+
+<script type="text/javascript">
+    
+    function mynewFunction() {
+    var checkBox = document.getElementById("menu_opener_id");
+
+
+   
+    if (checkBox.checked == true){
+
+
+        $("#menutop").hide();
+         
+        
+         
+    } else {
+        
+        
+       
+       $("#menutop").show();
+       
+
+       
+    }
+}
+</script>
+                        
+
+                    </article>
+
+                     <article class="column default-column" style="background-color: #F19161;">
+                        <div class="column-inner">  
+                            <h3>Help 10140 people for education</h3>
+                            <h4>No one has ever become poor by giving</h4>
+                            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                            <div class="text-right link"><a href="#" class="theme-btn btn-style-one">BECOME A VOLUNTEER</a></div>
+                        </div>
+
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+           
+           
+ 
+
+
+
+
+                       
+
+
+
+       
+        
+
 
             <!--Two Column-->
             <section class="two-column no-padd-bottom">
@@ -816,302 +1078,26 @@
 
 <!--Login Section -->
 
-            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-                <div class="modal-dialog" style="width: 800px;" role="document">
-                    <div class="modal-content modal-info col-md-12" id="grad1">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
-                        </div>
-                        <div class="modal-body" >
-                           
-                                    <div id="expand" class="col-md-6 " style="margin-top: 10px;">
-                                     
-                                        <h3 class=" w3-lobster w3-xxxlarge rainbow"><b>Sign up for free...!!</b></h3>
-                                        <br>
-                                        <div class="wizard">
+<?php require 'includes/login.php'; ?>
 
 
-                                         <div class="wizard-inner">
 
 
-                                        <ul class="nav nav-tabs"  role="tablist">
 
+<?php require 'modals/water.php'; ?>
 
-                                            <li role="presentation" class="active"><a class="w3-lobster" href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1"><b>Login Info</b></a></li>
-                                            <li role="presentation"><a class="w3-lobster" href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2"><b>Account Info</b></a></li>
-                                        </ul>
+<?php require 'modals/other.php'; ?>
 
+<?php require 'modals/infra.php'; ?>
 
-                                        </div>
+<?php require 'modals/stat.php'; ?>
 
 
-
-                                        <form method="post" action="<?php echo base_url() ?>index.php/User/Register">
-                                    <div class="tab-content">
-                                        <div class="tab-pane active" role="tabpanel" id="step1">
-                                            <div class="step1">
-                                                
-                                               
-                                           
-                                            <div class="form-group" style="margin-top:22px; ">
-                                            
-
-
-                                            
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-                                                
-                                            </div>
-                                             <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                    <input id="password-field" type="password" class="form-control pwd" name="password" placeholder="Password">
-                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
-                                                      </span>
-                                                </div>
-
-                                                
-                                            </div>
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                    <input  type="password" class="form-control pwd1" name="password" placeholder="Password">
-                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default reveal1" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
-                                                      </span>
-                                                </div>
-
-                                                
-                                            </div>
-                                               
-                                            </div>
-                                           
-                                            <div class=" pull-right">
-
-
-                                                <a role="button" id="next" class="next-step"><b>Next >>></b></a>
-                                                
-                                            </div>
-                                        
-                                             </div>
-
-
-                                        <div class="tab-pane col-md-12" role="tabpanel" id="step2" >
-                                            <div class="step2">
-
-                                                <div class="col-md-6">
-
-                                                <div class="form-group" style="margin-top:10px; ">
-                                            
-                                             
-                                                
-                                            
-                                                <label class="switch"><input class="form-control" type="checkbox" id="togBtn" onclick="myFunction()"><div class="slider round"><!--ADDED HTML --><span class="on">Join As Donor</span><span class="off">Join As Recipient</span><!--END--></div></label>
-
-
-                                                <div class="message1"><span>Join As a Donor<small></small></span></div>
-                                                <div class="message2"><span>For join as a Recipient You should <b>attach a proper validity recommendation </b><small></small></span></div>
-
-
-
-
-                                                
-                                            </div>
-                                             <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-
-                                                
-                                            </div>
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-                                                
-                                            </div>
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-                                                
-                                            </div>
-
-                                            <div class=" pull-left">
-
-
-                                                <a role="button" id="prev" class="prev-step"><b><<< Prev</b></a>
-                                                
-                                            </div>
-
-                                        </div>
-
-                                        
-
-                                        <div class="col-md-6">
-
-
-
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <div class="input-group" id="attch">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-paperclip"></i></span>
-                                                    <input id="filechoose" type="file" class="form-control" name ="file_name" placeholder="Attached your Recommendation..">
-                                                </div>
-
-                                                
-                                            </div>
-
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-                                                
-                                            </div>
-
-
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-                                                
-                                            </div>
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-
-
-                                            
-                                               <label>By clicking in "Register now", you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
-                                                
-                                            </div>
-
-                                            <input type="submit" value="SIGN UP"  class="pull-right
-                                                theme-btn light-btn">
-
-
-                                        </div>
-                                            </div>
-
-                                         </div>
-
-                                     </div>
-                                   
-                                </form>
-
-                                    </div>
-
-                                        
-                                    </div>
-                                    <div id="verticalline" class="vl"></div>
-                                    
-                                    <div class="col-md-6" id="signin"  style="margin-top: 10px;">
-                                       <h3 class=" w3-lobster w3-xxxlarge rainbow2"><b>Sign in...!!</b></h3>
-                                        <br>
-                                        <br>
-                                        <br>
-                                       
-                                        
-                                        <form method="post" action="<?php echo base_url() ?>index.php/User/loginchk">
-
-                                            <div class="form-group" style="margin-top:10px; ">
-                                            
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                                </div>
-
-
-                                            </div>
-                                            <div class="form-group" style="margin-top:6px; ">
-                                           <div class="input-group">
-                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                    <input id="password-field" type="password" class="form-control pwd" name="password" placeholder="Password">
-                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
-                                                      </span>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="form-group" style="margin-top:10px; " >
-                                            
-
-
-                                            
-                                               <label><a href="#">Forget Password?</a></label>
-                                               <input type="submit" value="SIGNIN"  class="pull-right
-                                                theme-btn light-btn">
-                                                
-                                            </div>
-                                           
-                                            <br>
-                                            <div class="">
-                                                
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="clearfix"></div>
-                             
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+       
 <!--End of Login Section -->
 
 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="<?php echo base_url()?>template/js/jquery.js"></script> 
         <script src="<?php echo base_url()?>template/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url()?>template/js/rev-plugins.js"></script>
@@ -1126,10 +1112,78 @@
         <script src="<?php echo base_url()?>template/js/googlemaps.js"></script>
         <script src="<?php echo base_url()?>template/js/wow.js"></script>
         <script src="<?php echo base_url()?>template/js/script.js"></script>
+
+
+
+
+        
+
+<script>
+
+var nbOptions = 8;
+var angleStart = -360;
+
+// jquery rotate animation
+function rotate(li,d) {
+
+    $({d:angleStart}).animate({d:d}, {
+        step: function(now) {
+
+            $(li)
+               .css({ transform: 'rotate('+now+'deg)' })
+               .find('label')
+                  .css({ transform: 'rotate('+(-now)+'deg)' });
+        }, duration: 0
+    });
+}
+
+// show / hide the options
+function toggleOptions(s) {
+
+
+
+    $(s).toggleClass('open');
+    var li = $(s).find('li');
+    var deg = $(s).hasClass('half') ? 180/(li.length-1) : 360/li.length;
+    for(var i=0; i<li.length; i++) {
+        var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
+        $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
+    }
+
+}
+
+$('.selector button').click(function(e) {
+
+
+
+    toggleOptions($(this).parent());
+
+});
+
+setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var $_Tawk_API = {}, $_Tawk_LoadStart = new Date();
             (function() {
+
                 var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
                 s1.async = true;
                 s1.src = 'https://embed.tawk.to/569cfc09aeafd72017dd6ea9/default';
@@ -1206,6 +1260,7 @@ function prevTab(elem) {
                     $("#signin").hide();
                     $("#verticalline").hide();
                      $("#attch").hide();
+                     $("#role").hide();
                     document.getElementById("togBtn").checked = true;
                 });
 
@@ -1213,6 +1268,7 @@ function prevTab(elem) {
                     $("#signin").show();
                     $("#verticalline").show();
                     $("#attch").hide();
+                    $("#role").hide();
                     document.getElementById("togBtn").checked = true;
                 });
                 // $(".btn2").click(function(){
@@ -1226,9 +1282,19 @@ function prevTab(elem) {
    
     if (checkBox.checked == true){
         $("#attch").hide();
+         $("#role").hide();
+         return "don";
+        
+         
     } else {
-        $("#filechoose").css("background-color", " #F92615");
+        
+        
+        $("#filechoose").css("background-color", "#F92615");
        $("#attch").show();
+       $("#role").show();
+       return "res";
+
+       
     }
 }
 
@@ -1247,6 +1313,11 @@ function prevTab(elem) {
 
             });
         </script>
+
+
+
+
+
 
 
         <script type="text/javascript">
@@ -1293,6 +1364,321 @@ function prevTab(elem) {
             });
         });
         </script>
+
+
+        <!-- <script type="text/javascript">
+            
+
+
+            function valueFunction(){
+    var checkBox = document.getElementById("togBtn");
+   
+    if (checkBox.checked == true){
+       
+         return "don";
+        
+         
+    } else if(checkBox.checked == false) {
+        
+       
+       return "res";
+
+       
+    }
+
+
+
+
+            }
+
+        </script> -->
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#topadd").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      },800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+<script >
+          $(function() {
+              //Date picker
+              $('#datepicker').datepicker({
+                  autoclose: true
+              })
+          })
+
+          $(function() {
+              //Date picker
+              $('#datepicker9').datepicker({
+                  autoclose: true
+              })
+          })
+
+      </script>
+
+
+
+      <script type="text/javascript">
+        
+      $('#link_one').on('click',function(event){
+
+
+           <?php
+                $loggerrole = $this->session->userData('role');
+                if( $loggerrole == "Principle" || $loggerrole == "Student" || $loggerrole == "Other Academic" ){
+                    ?>
+
+                       $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          
+
+
+                      $("#water").modal('show');
+
+              <?php
+
+                }else if( $loggerrole == "Donor"){
+
+
+                    ?>
+
+
+                     $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+
+                    alert("Please login as a Recipient");
+
+                <?php
+
+                }else if($loggerrole == ""){
+                    ?>
+
+                    
+                    $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+                          
+
+                     $("#myModal4").modal();
+            <?php 
+
+          }
+
+          ?>
+
+
+        });
+
+
+
+$('#link_two').on('click',function(event){
+
+
+           <?php
+                $loggerrole = $this->session->userData('role');
+                if( $loggerrole == "Principle" || $loggerrole == "Student" || $loggerrole == "Other Academic" ){
+                    ?>
+
+                       $("#water").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          
+
+
+                      $("#stat1").modal('show');
+
+              <?php
+
+                }else if( $loggerrole == "Donor"){
+
+
+                    ?>
+
+
+                     $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+
+                    alert("Please login as a Recipient");
+
+                <?php
+
+                }else if($loggerrole == ""){
+                    ?>
+
+                    
+                    $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+                          
+
+                     $("#myModal4").modal();
+            <?php 
+
+          }
+
+          ?>
+
+
+        });
+
+
+
+$('#link_three').on('click',function(event){
+
+
+           <?php
+                $loggerrole = $this->session->userData('role');
+                if( $loggerrole == "Principle" || $loggerrole == "Student" || $loggerrole == "Other Academic" ){
+                    ?>
+
+                       $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#water").modal('hide');
+                          
+
+
+                      $("#infra").modal('show');
+
+              <?php
+
+                }else if( $loggerrole == "Donor"){
+
+
+                    ?>
+
+
+                     $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+
+                    alert("Please login as a Recipient");
+
+                <?php
+
+                }else if($loggerrole == ""){
+                    ?>
+
+                    
+                    $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+                          
+
+                     $("#myModal4").modal();
+            <?php 
+
+          }
+
+          ?>
+
+
+        });
+
+
+
+$('#link_four').on('click',function(event){
+
+
+           <?php
+                $loggerrole = $this->session->userData('role');
+                if( $loggerrole == "Principle" || $loggerrole == "Student" || $loggerrole == "Other Academic" ){
+                    ?>
+
+                       $("#stat1").modal('hide');
+                        $("#water").modal('hide');
+                         $("#infra").modal('hide');
+                          
+
+
+                      $("#othernew").modal('show');
+
+              <?php
+
+                }else if( $loggerrole == "Donor"){
+
+
+                    ?>
+
+
+                     $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+
+                    alert("Please login as a Recipient");
+
+                <?php
+
+                }else if($loggerrole == ""){
+                    ?>
+
+                    
+                    $("#stat1").modal('hide');
+                        $("#othernew").modal('hide');
+                         $("#infra").modal('hide');
+                          $("#water").modal('hide');
+                          
+
+                     $("#myModal4").modal();
+            <?php 
+
+          }
+
+          ?>
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+
+
 
     </body>
 
