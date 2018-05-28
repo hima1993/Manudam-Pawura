@@ -16,5 +16,13 @@ class RequestModel extends CI_Model{
     }
 
 
+    function getsysid($loggerid){
+
+        $sysid = $this->db->query("SELECT reciepientid as resid FROM `reciepient` WHERE systemUser_systemUserId =$loggerid ")->row()->resid;
+
+        return $sysid;
+    }
+
+
 
 }

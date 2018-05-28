@@ -3,7 +3,7 @@
 
     <div class="sidebar-inner">
         <!--Logo-->
-        <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+        <div class="logo"><a href="#"><img src="<?php echo base_url()?>template/images/logo.png" alt=""></a></div>
 
         <!--Main Navigation-->
         <nav class="navigation">

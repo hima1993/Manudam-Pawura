@@ -12,7 +12,15 @@
                 </div>
                 <!--Top Right-->
                 <div class="col-md-6 col-sm-6 col-xs-12 top-right">
-                    <div class="social-links"><a href="#" class="fa fa-facebook-f"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-google-plus"></a> <a href="#" class="fa fa-linkedin"></a> <a href="#" class="fa fa-dribbble"></a> <a href="#" class="fa fa-instagram"></a> <a href="#" class="fa fa-pinterest-p"></a> <a href="#" class="fa fa-youtube-play"></a></div>
+                    <div class="social-links" style="padding-right: 45px;"><b><p> <?php 
+                                $loggername = $this->session->userData('loggername');
+                                if ($loggername == ''){
+
+
+                                }else{
+
+                                    echo 'Welcome '.$loggername;
+                                }  ?></p></b></div>
                 </div>
 
             </div>
@@ -45,6 +53,19 @@
                             <li class="current dropdown"><a href="index.php">Home</a>
 
                             </li>
+<<<<<<< HEAD
+                            <li><a href="<?php echo base_url()?>index.php/Others/Godonate">Make Donation</a></li>
+               
+
+
+                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Newsfeed">Projects </a></li>
+                            <li class="dropdown"><a href="<?php echo base_url()?>index.php/Blog/display_comments">Blog</a></li>
+
+                            <li><a href="<?php echo base_url()?>index.php/Newsfeed">About Us</a></li>
+                            
+
+
+=======
                             <li class="dropdown"><a href="#">Pages</a>
                     <ul class="submenu">
                         <li><a href="<?php echo base_url() ?>index.php/Others/GoAboutUs">About Us</a></li>
@@ -118,10 +139,24 @@
                           <!--  <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Others/GoBlog">Submit</a></li> -->
                             <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Others/GoContact">Contact</a>
                             <li class="dropdown"><a href="<?php echo base_url() ?>index.php/Admin_Controller/viewPage/admin_index">LOGIN</a>
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 <!--                                <ul class="submenu from-left">
                                     <li><a href="contact.php">Contact Style One</a></li>
                                     <li><a href="contact-2.php">Contact Style Two</a></li>
                                 </ul>-->
+                            </li>
+
+                            <li><?php 
+                                $loggername = $this->session->userData('loggername');
+                                if ($loggername == ''){
+
+                                    ?><a href="#" class="use1" data-toggle="modal" data-target="#myModal4">Login</a><?php
+
+
+                                }else{
+
+                                    ?><a href="<?php echo base_url()?>index.php/User/signout">Logout</a><?php
+                                }  ?>
                             </li>
                         </ul>
                     </div>
@@ -135,3 +170,4 @@
     <!--Header Lower End-->
 
 </header>
+

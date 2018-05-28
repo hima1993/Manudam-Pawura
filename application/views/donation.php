@@ -183,7 +183,24 @@
     </div>
       
     <div class="col-lg-10" style="padding-right: 10px;">
-      <input style="margin-left: 54px;" type="file" class="form-control" name ="file_name" placeholder="Image">
+      <input style="margin-left: 54px;" type="file" class="form-control" name ="file_name" placeholder="Attachment">
+      
+        
+      </div>
+  </div>
+
+      </div>
+
+
+
+      <div class="col-lg-12 row">
+      <div class="form-group col-lg-12">
+        <div class="col-lg-1">
+      <label for="file_name1" class="col-form-label">Upload Images</label>
+    </div>
+      
+    <div class="col-lg-10" style="padding-right: 10px;">
+      <input style="margin-left: 54px;" type="file" class="form-control" name ="file_name1" placeholder="Image">
       
         
       </div>
