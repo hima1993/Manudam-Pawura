@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 $overall_vote_rows =0;
 $overall_vote_rate =0;
@@ -5,6 +6,8 @@ $blog_vote_overall_dec_rate =0;
 $blog_vote_ip_rate =0;
 ?>
 
+=======
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +23,7 @@ $blog_vote_ip_rate =0;
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link href="<?php echo base_url() ?>template/css/responsive.css" rel="stylesheet">
+<<<<<<< HEAD
 
 
         <style type="text/css">
@@ -106,12 +110,26 @@ $blog_vote_ip_rate =0;
                                     <h2>Our <strong>Blog</strong></h2>
                                 </div>
 
+=======
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+
+            <!-- Preloader -->
+            <div class="preloader"></div>
+
+            <!-- Main Header -->
+            <?php require 'includes/header.php';?>
+			<header class="main-header fixed">
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 
 
     <!--Header Lower-->
 
     <!--Header Lower End-->
 
+<<<<<<< HEAD
 
             <!--End Main Header -->
 
@@ -343,6 +361,38 @@ foreach ($post_data as $item) {
                      <input style="margin-top:10px;" class="btn btn-info btn-xs" type="submit" value="Submit" onclick="submitcomment(this);">
                  </div>
                 
+=======
+</header>
+            <!--End Main Header -->
+
+<div class="item span9" style="margin-top: 120px;margin-right: 100px">
+  <div class="item span9" >
+    <ul class="thumbnails">
+
+<?php
+
+foreach ($post_data as $item) {
+	?>
+    <center>
+
+         <li class="span5" style="margin-left: 100px;margin-top:40px ;margin-bottom: 30px ; box-shadow: 5px 5px 5px 5px rgba(20, 2, 4, 0.2);width: 50%;height:50%">
+
+           <div class="thumbnail">
+            <h3 style="padding-top:25px ;padding-bottom:25px"><?php echo $item->title; ?></h3>
+               <?php echo "<img src='" . base_url() . "assets/business/" . $item->image_path . "' alt=''/>" ?>
+               <div class="caption">
+
+                 <p><h4 style=""><?php echo $item->content; ?></h4></p>
+               </div>
+               
+                <form>
+                 <div class="form-group">
+                    
+                     <textarea class="form-control" rows="2" id="comment" placeholder="write a comment"></textarea>
+                     <input style="margin-top:10px;" class="btn btn-info btn-xs" type="submit" value="Submit">
+                 </div>
+                </form>
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
               
 
 
@@ -352,6 +402,7 @@ foreach ($post_data as $item) {
          </li>
 
 
+<<<<<<< HEAD
 
 <?php 
 }
@@ -586,6 +637,30 @@ function submitcomment(object) {
 
 
     
+=======
+<?php
+
+	?>
+
+</ul>
+</div>
+<div class="item span9">
+    <ul class="thumbnails">
+
+
+<?php }
+?>
+
+</ul>
+</div>
+
+    </div>
+
+
+            <!--Main Footer-->
+
+        </div>
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
         <!--End pagewrapper-->
 
         <!--Scroll to top-->
@@ -632,8 +707,15 @@ function submitcomment(object) {
                 a.src = g;
                 m.parentNode.insertBefore(a, m)
             })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+<<<<<<< HEAD
             ga('create', 'UA-15521914-3', 'auto');
             ga('send', 'pageview');
+=======
+
+            ga('create', 'UA-15521914-3', 'auto');
+            ga('send', 'pageview');
+
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
         </script>
 
     </body>

@@ -1,15 +1,25 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 class NewsFeedModel extends CI_Model{
     
 public function selectpost() {
 		try {
+<<<<<<< HEAD
 			$this->db->order_by("requestId", "DESC");
 			$result = $this->db->get('request');
+=======
+			$this->db->order_by("id", "DESC");
+			$result = $this->db->get('advertisement');
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 			return $result->result();
 		} catch (Exception $err) {
 			return $err->getMessage();
 		}
 	}
+<<<<<<< HEAD
 
 
 
@@ -50,4 +60,12 @@ return $this->db->get();
 
 	
 	
+=======
+	
+
+	
+
+
+
+>>>>>>> a805fb8f572a8ad3e2974aad305e9bf0284f837f
 }
