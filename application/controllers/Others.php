@@ -7,7 +7,7 @@ class Others extends CI_Controller {
 
 	public function GoAboutUs()
 	{
-		$this->load->view('AboutUs');
+		$this->load->view('menu');
 	}
 
 	public function GoBlog(){
