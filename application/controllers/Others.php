@@ -3,8 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Others extends CI_Controller {
 
-	public function GoAboutUs() {
-		$this->load->view('AboutUs');
+
+
+
+	public function GoAboutUs()
+	{
+		$this->load->view('menu');
+
+
 	}
 
 	public function GoBlog() {
